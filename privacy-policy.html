@@ -35,6 +35,13 @@
       margin-bottom: 12px;
       color: #EEEEE8;
     }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 6px;
+      color: #EEEEE8;
+    }
     p, li {
       font-size: 15px;
       color: #9A9A9A;
@@ -46,6 +53,14 @@
     }
     li { margin-bottom: 6px; }
     strong { color: #EEEEE8; }
+    code {
+      background: #1E1E21;
+      border: 1px solid #2A2A2E;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #E8844A;
+    }
     .highlight {
       background: #1E1E21;
       border-left: 3px solid #E8844A;
@@ -68,67 +83,159 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Brainora &mdash; Offline Brain &amp; Puzzle Games<br>Last updated: April 5, 2026</p>
+    <p class="subtitle">Brainora &mdash; Offline Brain &amp; Puzzle Games<br>Effective date: May 13, 2026 &middot; Last updated: May 13, 2026</p>
 
     <div class="highlight">
-      <p><strong>Brainora does not collect, store, transmit, or share any personal data. Everything stays on your device.</strong></p>
+      <p><strong>Brainora is offline-first.</strong> Your scores, settings, and progress stay on your device and are never sent to us. The only third party that receives data is Google AdMob, which shows a small banner advertisement to support the app. You can review and change your advertising preferences from the in-app Settings screen.</p>
     </div>
 
-    <h2>1. Information We Collect</h2>
-    <p><strong>None.</strong> Brainora does not collect any personal information, usage data, analytics, crash reports, or device identifiers. The app operates entirely offline and makes no network requests.</p>
-
-    <h2>2. Data Stored on Your Device</h2>
-    <p>Brainora saves the following data locally on your device to provide the game experience:</p>
+    <h2>1. Information we do not collect</h2>
+    <p>Brainora itself does <strong>not</strong> collect:</p>
     <ul>
-      <li>Game progress, scores, and high scores</li>
-      <li>Game settings and preferences (theme, haptics, sound)</li>
-      <li>Daily challenge completion history and streaks</li>
-      <li>Per-game statistics (games played, accuracy, best times)</li>
+      <li>Your name, email address, phone number, or any account credentials.</li>
+      <li>Your physical location, GPS coordinates, or precise device location.</li>
+      <li>Your contacts, calendar, photos, microphone, or camera.</li>
+      <li>Your game scores, level progress, achievements, or any other in-app activity.</li>
     </ul>
-    <p>This data is stored using on-device storage (MMKV) and <strong>never leaves your device</strong>. It is not transmitted to any server, third party, or external service.</p>
-
-    <h2>3. Internet Access</h2>
-    <p>Brainora does not require or use an internet connection. The app is fully functional in airplane mode. No data is sent or received over the network.</p>
-
-    <h2>4. Third-Party Services</h2>
-    <p>Brainora does not integrate with any third-party services, including:</p>
+    <p>The following data is stored <strong>only on your device</strong> using on-device storage (MMKV) and never leaves your phone:</p>
     <ul>
-      <li>No analytics (Google Analytics, Firebase, etc.)</li>
-      <li>No advertising networks</li>
-      <li>No crash reporting tools</li>
-      <li>No social media SDKs</li>
-      <li>No tracking or attribution services</li>
+      <li>Game progress, level completion, stars, and high scores</li>
+      <li>Game settings and preferences (theme, haptics, sound, reduce motion)</li>
+      <li>Daily challenge and workout completion history</li>
+      <li>Per-game statistics and achievements</li>
     </ul>
 
-    <h2>5. Advertising</h2>
-    <p>Brainora contains <strong>no advertisements</strong> of any kind.</p>
+    <h2>2. Information collected by Google AdMob</h2>
+    <p>Brainora shows a single banner advertisement using Google AdMob to keep the app free. To serve relevant ads and measure performance, AdMob automatically collects certain technical information:</p>
+    <ul>
+      <li>
+        <strong>Advertising identifier (AAID on Android, IDFA on iOS)</strong> — a resettable, anonymous ID unique to your device. You can reset or limit this from your device's privacy settings at any time.
+      </li>
+      <li>
+        <strong>IP address</strong> — used to determine approximate country/region so ads can be localized, and for fraud prevention.
+      </li>
+      <li>
+        <strong>Device information</strong> — device model, OS version, language, network type, and screen dimensions.
+      </li>
+      <li>
+        <strong>Ad interaction data</strong> — whether an ad was shown, viewed, or tapped.
+      </li>
+    </ul>
+    <p>
+      Data collection by AdMob is governed by Google's own privacy policy:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.
+      We do not receive your individual advertising data; we only see aggregated performance reports in the AdMob console.
+    </p>
 
-    <h2>6. In-App Purchases</h2>
+    <h2>3. Your ad consent choices</h2>
+    <p>
+      On first launch the app shows Google's consent form if you are in the European Economic Area, the United Kingdom, Switzerland, or a region with similar privacy regulation (such as California under the CCPA/CPRA). You can choose between personalized ads, non-personalized ads, or (where offered) opt out of advertising data use for personalization.
+    </p>
+    <h3>Changing your choice later</h3>
+    <p>
+      Open the app, tap <strong>Settings</strong>, and select <strong>Ad Preferences</strong>. This opens Google's consent management form, where you can change your selection at any time. The change takes effect on the next ad request.
+    </p>
+    <p>
+      If the Ad Preferences row is not visible in Settings, it means your region does not require a consent selection under current regulations.
+    </p>
+
+    <h2>4. Internet access</h2>
+    <p>
+      Game logic in Brainora is fully offline. Internet is required only for serving ads; if your device is offline, the banner area will simply be empty and every game continues to work normally. Game data, scores, and progress are <strong>never</strong> transmitted over the network.
+    </p>
+
+    <h2>5. Third-party services</h2>
+    <p>Brainora integrates with one third-party service:</p>
+    <ul>
+      <li>
+        <strong>Google AdMob</strong> — banner advertising. See
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>
+        and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob program policies</a>.
+      </li>
+    </ul>
+    <p>Brainora does <strong>not</strong> use:</p>
+    <ul>
+      <li>Third-party analytics (Google Analytics, Firebase Analytics, etc.)</li>
+      <li>Crash reporting tools</li>
+      <li>Social media SDKs</li>
+      <li>Attribution / tracking SDKs</li>
+    </ul>
+
+    <h2>6. Advertising</h2>
+    <p>Brainora shows a single banner advertisement at the bottom of the screen, served by Google AdMob. The banner is hidden during active gameplay so it never crowds the game grid. We do not sell your data; AdMob's collection is governed by Google's privacy policy linked above.</p>
+
+    <h2>7. In-app purchases</h2>
     <p>Brainora contains <strong>no in-app purchases</strong>. All content is available for free.</p>
 
-    <h2>7. Children's Privacy</h2>
-    <p>Brainora does not collect any data from anyone, including children. The app is safe for users of all ages. We comply with COPPA (Children's Online Privacy Protection Act) and similar regulations by design, as no personal information is collected.</p>
-
-    <h2>8. Data Deletion</h2>
-    <p>Since all data is stored locally on your device, you can delete it at any time by:</p>
-    <ul>
-      <li>Using the "Reset All Stats" option in the app's Settings screen</li>
-      <li>Clearing the app's data through your device's system settings</li>
-      <li>Uninstalling the app (all local data is removed)</li>
-    </ul>
+    <h2>8. Children's privacy</h2>
+    <p>
+      Brainora is intended for a <strong>general audience</strong>. It is not directed at children under 13 (or the equivalent minimum age in your jurisdiction). We do not knowingly collect personal information from children. If you are a parent or guardian and you believe a child has used the app and you wish to request deletion of any advertising data Google AdMob may have collected, contact us at the email below and we will help you initiate that request with Google.
+    </p>
 
     <h2>9. Permissions</h2>
-    <p>Brainora requests no special device permissions. It does not access your camera, microphone, contacts, location, files, or any other sensitive device features.</p>
+    <p>Brainora declares the following permission:</p>
+    <ul>
+      <li>
+        <code>com.google.android.gms.permission.AD_ID</code> (Android 13+) — read the device's advertising identifier so AdMob can serve ads. You can opt out by going to <em>Android Settings → Privacy → Ads → Delete advertising ID</em>.
+      </li>
+    </ul>
+    <p>
+      On iOS, Brainora uses the standard <strong>App Tracking Transparency</strong> framework. You will be asked once whether the app may use the IDFA. Choosing "Ask App Not to Track" disables personalized ads but keeps non-personalized advertising.
+    </p>
+    <p>
+      Brainora does <strong>not</strong> request access to your camera, microphone, contacts, calendar, location, files, or any other sensitive device features.
+    </p>
 
-    <h2>10. Changes to This Policy</h2>
-    <p>If we update this privacy policy, the changes will be posted on this page with an updated "Last updated" date. Since the app collects no data, significant changes are unlikely.</p>
+    <h2>10. Your rights (GDPR / CCPA)</h2>
+    <p>If you reside in the EEA, UK, Switzerland, or California, you have the right to:</p>
+    <ul>
+      <li>Access the personal information that has been collected about you.</li>
+      <li>Request correction or deletion of your personal information.</li>
+      <li>Withdraw consent for personalized advertising at any time (via the in-app Ad Preferences row in Settings).</li>
+      <li>Object to processing or request restriction.</li>
+      <li>Request a copy of your data in a portable format.</li>
+      <li>Lodge a complaint with your national data protection authority.</li>
+    </ul>
+    <p>
+      Because Brainora itself does not collect personal data, requests regarding advertising data should be directed to Google via
+      <a href="https://support.google.com/policies/troubleshooter/7575787" target="_blank" rel="noopener">Google's privacy request form</a>. We will assist with questions; contact details below.
+    </p>
 
-    <h2>11. Contact</h2>
-    <p>If you have questions about this privacy policy, you can reach us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:contact@foureyedgems.in">contact@foureyedgems.in</a></p>
+    <h2>11. Data deletion</h2>
+    <p>Since all on-device data is stored locally, you can delete it at any time by:</p>
+    <ul>
+      <li>Using the "Reset All Stats" option in the app's Settings screen.</li>
+      <li>Clearing the app's data through your device's system settings.</li>
+      <li>Uninstalling the app (all local data is removed).</li>
+    </ul>
+    <p>
+      Advertising data held by Google can be deleted via the Google privacy request form linked in section&nbsp;10.
+    </p>
+
+    <h2>12. Data retention</h2>
+    <ul>
+      <li>On-device data (scores, settings, progress) remains until you uninstall the app or clear its data.</li>
+      <li>AdMob retains advertising data according to Google's retention policy, which you can review in the Google privacy policy linked above.</li>
+    </ul>
+
+    <h2>13. Security</h2>
+    <p>
+      All network communication from the app (limited to ad-serving by Google AdMob) is encrypted with HTTPS. On-device storage is sandboxed by the operating system. We do not transmit your game progress, scores, or any other in-app activity to any server.
+    </p>
+
+    <h2>14. Changes to this policy</h2>
+    <p>
+      We may update this privacy policy from time to time. When we do, we will change the "Last updated" date at the top of this page. Material changes will be highlighted in the app's release notes on the Play Store and App Store.
+    </p>
+
+    <h2>15. Contact</h2>
+    <p>For privacy questions, deletion requests, or any concerns about how Brainora handles your data, contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:contact@foureyedgems.in">contact@foureyedgems.in</a><br>
+    <strong>App package:</strong> <code>com.brainora.app</code></p>
 
     <div class="footer">
       <p>&copy; 2026 Brainora. All rights reserved.</p>
+      <p style="margin-top: 8px;">This policy is published to comply with the Google Play Store Data Safety disclosure requirements and the AdMob publisher disclosure requirement.</p>
     </div>
   </div>
 </body>
